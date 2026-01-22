@@ -1,0 +1,10 @@
+[project]
+name = "vet_simulator"
+version = "1.0.0"
+requires-python = ">=3.13.11"
+dependencies = ["chainlit>=2.9.6", "groq>=1.0.0"]
+
+[project.optional-dependencies]
+dev = [
+		"ruff", "mypy", "tombi", "pip-tools"
+]
