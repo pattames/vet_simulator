@@ -11,7 +11,7 @@ async def start():
     # Initialize chat history with system prompt
     cl.user_session.set("history", [{"role": "system", "content": SYSTEM_PROMPT}])
     # Send first message
-    await cl.Message(content="Bienvenido al simulador. ¿Deseas seleccionar un caso por especie o por área temática?").send()
+    await cl.Message(content="Bienvenido al simulador de casos **veterinarios**.\n\n¿Deseas seleccionar un caso por especie o por área temática?").send()
 
 @cl.on_message
 async def main(message: cl.Message):
