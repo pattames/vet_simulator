@@ -26,7 +26,7 @@ async def main(message: cl.Message):
     )
 
     # Append LLMs response to history
-    assistant_message = response.choices[0].message.content
+    assistant_message = response.choices[0].message.content or ""
     history.append({"role": "assistant", "content": assistant_message})
 
     # Send LLMs response
