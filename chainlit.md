@@ -1,14 +1,27 @@
-# Welcome to Chainlit! 🚀🤖
+# Simulador de Casos Clínicos Veterinarios
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+Bienvenido al simulador interactivo de casos clínicos veterinarios, diseñado para fomentar el razonamiento clínico.
 
-## Useful Links 🔗
+## ¿Cómo funciona?
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+1. **Selecciona un caso** por especie (canino, felino, bovino, etc.) o por área temática (medicina interna, cirugía, cardiología, etc.)
+2. **Analiza el escenario** inicial con los datos del paciente
+3. **Formula preguntas** clínicas relevantes y propón acciones diagnósticas
+4. **Avanza progresivamente** hacia el diagnóstico y plan terapéutico
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+## Enfoque pedagógico
 
-## Welcome screen
+- La información se revela gradualmente, simulando la práctica clínica real
+- Recibirás retroalimentación sobre tu razonamiento
+- El sistema te guiará con pistas si te atascas, sin revelar respuestas directamente
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+## Consejos para aprovechar al máximo
+
+- Piensa como un veterinario clínico: ¿qué información necesitas?
+- Formula preguntas específicas sobre el caso
+- Propón diagnósticos diferenciales y justifícalos
+- Sugiere pruebas diagnósticas apropiadas
+
+---
+
+*Selecciona una categoría para comenzar.*
