@@ -4,7 +4,7 @@ AI chatbot developed with Chainlit.
 
 ## Prerequisites
 
-- pyenv (or Python 3.13)
+- pyenv (recommended) — required Python version is pinned in `.python-version`
 - pip
 
 ## Setup
@@ -16,13 +16,19 @@ AI chatbot developed with Chainlit.
    cd vet_simulator
    ```
 
-2. **Create a virtual environment:**
+2. **Install the pinned Python version:**
 
    ```bash
-   python3 -m venv .venv
+   pyenv install $(cat .python-version)
    ```
 
-3. **Activate the virtual environment:**
+3. **Create a virtual environment:**
+
+   ```bash
+   python -m venv .venv
+   ```
+
+4. **Activate the virtual environment:**
 
    - On macOS/Linux:
      ```bash
@@ -33,13 +39,13 @@ AI chatbot developed with Chainlit.
      .venv\Scripts\activate
      ```
 
-4. **Install dependencies:**
+5. **Install dependencies:**
 
    ```bash
    pip install -r requirements.lock -r requirements-dev.lock
    ```
 
-5. **Create environment variables file:**
+6. **Create environment variables file:**
 
    ```bash
    # copy .env.example content and paste to .env while creating it
@@ -53,7 +59,7 @@ AI chatbot developed with Chainlit.
    vim .env  # or nvim, nano, code, etc.
    ```
 
-6. **Start the app:**
+7. **Start the app:**
 
    ```bash
    chainlit run app.py -w
@@ -96,4 +102,4 @@ deactivate
 
 - If you encounter module import errors, ensure the virtual environment is activated
 - For "command not found" errors, verify all dependencies are installed
-- Check that Python version is 3.13 or higher: `python --version`
+- Check that your Python version matches .python-version: `python --version`
