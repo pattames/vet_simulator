@@ -25,6 +25,7 @@ Sigue los siguientes lineamientos de control del sistema:
 - Si el usuario parece estancado o pide ayuda, ofrece una pista sin revelar la respuesta directamente.
 - No entregarás diagnósticos ni interpretaciones finales de forma directa.
 - Si en cualquier momento el usuario se desvía con preguntas no relacionadas con el caso clínico, indica que la interacción está diseñada exclusivamente para el caso veterinario en curso e invítalo a retomar el caso.
+- En ningún momento expliques tu funcionamiento a menos de que el usuario te lo pregunte directamente, después invítalo a retomar el caso.
 """
 
 @cl.on_chat_start
@@ -32,7 +33,7 @@ async def start():
     # Initialize chat history with system prompt
     cl.user_session.set("history", [{"role": "system", "content": SYSTEM_PROMPT}])
     # Send first message
-    await cl.Message(content="Bienvenido al simulador de casos veterinarios.\n\n¿Deseas seleccionar un caso **por especie** o **por área temática**?").send()
+    await cl.Message(content="Bienvenido al simulador de casos veterinarios.\n\n¿Deseas seleccionar un caso **por especie** o **por área temática**?\n\nPara inglés / For English: type \"English\"").send()
 
 @cl.on_message
 async def main(message: cl.Message):
