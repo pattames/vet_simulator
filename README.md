@@ -4,7 +4,7 @@ AI chatbot developed with Chainlit.
 
 ## Prerequisites
 
-- Python 3.13+
+- Python 3.13
 - pip
 
 ## Setup
